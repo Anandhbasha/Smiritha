@@ -3,3 +3,483 @@ Find a number using Binary Search.
 Search for a student name using Linear Search.
 Implement Binary Search without using built-in functions.
 Find the first and last occurrence of a number using Binary Search.
+
+
+#Sorting
+# Python Sorting Algorithms – Intermediate Level Coding Challenges
+
+## 1. Bubble Sort
+
+### Task 1: Employee Performance Ranking
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A company wants to rank its employees based on their performance scores. The HR department stores employee performance scores in an unsorted list.
+
+Your task is to implement Bubble Sort to arrange the scores in ascending order. Additionally, calculate how many swaps are required to sort the list.
+
+Problem Statement:
+
+Given an array of employee performance scores, sort the array in ascending order using Bubble Sort and print the total number of swaps performed.
+
+Input Format:
+
+* The first line contains an integer `N`, representing the number of employees.
+* The second line contains `N` space-separated integers representing performance scores.
+
+Output Format:
+
+* Print the sorted performance scores.
+* Print the total number of swaps.
+
+Sample Input:
+
+
+5
+85 60 95 40 75
+
+
+Sample Output:
+
+
+40 60 75 85 95
+5
+
+
+Constraints:
+
+* 2 ≤ N ≤ 1000
+* 0 ≤ Score ≤ 100
+
+### Task 2: Product Price Optimization
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+An e-commerce company wants to display products from the lowest price to the highest price.
+
+However, the company also wants to identify how many passes Bubble Sort requires to sort the product prices completely.
+
+Problem Statement:
+
+Given an array of product prices, implement Bubble Sort to arrange them in ascending order.
+
+Print the sorted prices and the number of passes required to complete the sorting process. Do not count unnecessary passes after the array becomes sorted.
+
+Input Format:
+
+* The first line contains an integer `N`.
+* The second line contains `N` space-separated product prices.
+
+Output Format:
+
+* First line: Sorted product prices.
+* Second line: Number of passes performed.
+
+Sample Input:
+
+
+5
+50 20 40 10 30
+
+
+Sample Output:
+
+
+10 20 30 40 50
+3
+
+
+Constraints:
+
+* 2 ≤ N ≤ 1000
+* 1 ≤ Price ≤ 100000
+
+## 2. Selection Sort
+
+### Task 3: Hospital Patient Priority Arrangement
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A hospital maintains a list of patient waiting times in minutes. The management wants to arrange patients based on their waiting time, starting with the patient who has waited the shortest time.
+
+Problem Statement:
+
+Given an array of patient waiting times, implement Selection Sort to arrange the values in ascending order.
+
+Additionally, count the number of times the minimum element is selected and placed in its correct position.
+
+Input Format:
+
+* The first line contains an integer `N`.
+* The second line contains `N` space-separated integers representing patient waiting times.
+
+Output Format:
+
+* Print the sorted waiting times.
+* Print the total number of swap operations.
+
+Sample Input:
+
+
+5
+45 20 60 10 30
+
+
+Sample Output:
+
+
+10 20 30 45 60
+3
+
+
+Constraints:
+
+* 2 ≤ N ≤ 1000
+* 1 ≤ Waiting Time ≤ 500
+
+### Task 4: Warehouse Inventory Sorting
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A warehouse stores different products with unique inventory IDs. The inventory management system needs to arrange these IDs in ascending order before generating a stock report.
+
+Problem Statement:
+
+Implement Selection Sort to sort the inventory IDs.
+
+After sorting, identify and print the second-largest inventory ID without using Python's built-in sorting functions.
+
+Input Format:
+
+* The first line contains an integer `N`.
+* The second line contains `N` unique space-separated inventory IDs.
+
+Output Format:
+
+* First line: Sorted inventory IDs.
+* Second line: Second-largest inventory ID.
+
+Sample Input:
+
+
+6
+105 203 101 305 150 250
+
+
+Sample Output:
+
+
+101 105 150 203 250 305
+250
+
+
+Constraints:
+
+* 2 ≤ N ≤ 1000
+* All inventory IDs are unique.
+
+## 3. Insertion Sort
+
+### Task 5: Student Examination Ranking
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A school examination department receives student marks one by one. Instead of sorting all marks at the end, the system should maintain the marks in sorted order whenever a new mark arrives.
+
+Problem Statement:
+
+Given an initial sorted list of student marks and a new student's mark, insert the new mark into its correct position using the Insertion Sort technique.
+
+Print the final sorted list.
+
+Input Format:
+
+* The first line contains an integer `N`, representing the number of existing students.
+* The second line contains `N` sorted marks.
+* The third line contains an integer `M`, representing the new student's mark.
+
+Output Format:
+
+\- Print the updated sorted list containing `N + 1` marks.
+
+Sample Input:
+
+
+5
+35 45 60 75 90
+55
+
+
+Sample Output:
+
+
+35 45 55 60 75 90
+
+
+Constraints:
+
+* 1 ≤ N ≤ 1000
+* 0 ≤ Marks ≤ 100
+
+### Task 6: Online Shopping Order Processing
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+An online shopping platform receives customer orders with different priority levels. Lower priority numbers represent more urgent orders.
+
+The system needs to insert each new order into the correct position while maintaining the priority order.
+
+Problem Statement:
+
+You are given an initial list of sorted order priorities and a sequence of new order priorities.
+
+Insert each new priority into the existing list using Insertion Sort logic.
+
+After processing all orders, print the final sorted priority list and the total number of shifts performed.
+
+Input Format:
+
+* The first line contains an integer `N`, representing the initial number of orders.
+* The second line contains `N` sorted priority values.
+* The third line contains an integer `K`, representing the number of new orders.
+* The fourth line contains `K` space-separated priority values.
+
+Output Format:
+
+* First line: Final sorted priority list.
+* Second line: Total number of shifts performed.
+
+Sample Input:
+
+
+4
+2 4 6 8
+3
+5 1 7
+
+
+Sample Output:
+
+
+1 2 4 5 6 7 8
+6
+
+
+Constraints:
+
+* 1 ≤ N ≤ 1000
+* 1 ≤ K ≤ 100
+* 1 ≤ Priority ≤ 10
+
+## 4. Quick Sort
+
+### Task 7: Delivery Time Optimization
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A delivery company tracks the delivery time of its packages in minutes. The management wants to analyze the fastest and slowest deliveries.
+
+Problem Statement:
+
+Implement Quick Sort to arrange the delivery times in ascending order.
+
+After sorting:
+
+1. Print the fastest delivery time.
+2. Print the slowest delivery time.
+3. Print the median delivery time. If the number of elements is even, calculate the average of the two middle values.
+
+Input Format:
+
+* The first line contains an integer `N`.
+* The second line contains `N` space-separated delivery times.
+
+Output Format:
+
+* First line: Sorted delivery times.
+* Second line: Fastest delivery time.
+* Third line: Slowest delivery time.
+* Fourth line: Median delivery time (print with one decimal place).
+
+Sample Input:
+
+
+5
+45 20 60 15 30
+
+
+Sample Output:
+
+
+15 20 30 45 60
+15
+60
+30.0
+
+
+Constraints:
+
+* 1 ≤ N ≤ 10000
+* 1 ≤ Delivery Time ≤ 100000
+
+### Task 8: Financial Transaction Analysis
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A banking application stores daily transaction amounts. The finance team wants to arrange transactions in ascending order and identify transactions that are above a given threshold.
+
+Problem Statement:
+
+Implement Quick Sort to sort the transaction amounts in ascending order.
+
+Given a threshold value `T`, count how many transactions have an amount greater than `T`.
+
+Input Format:
+
+* The first line contains an integer `N`.
+* The second line contains `N` space-separated transaction amounts.
+* The third line contains an integer `T`, representing the threshold.
+
+Output Format:
+
+* First line: Sorted transaction amounts.
+* Second line: Number of transactions greater than `T`.
+
+Sample Input:
+
+
+6
+500 1200 300 2500 800 1800
+1000
+
+
+Sample Output:
+
+
+300 500 800 1200 1800 2500
+3
+
+
+Constraints:
+
+* 2 ≤ N ≤ 10000
+* 1 ≤ Transaction Amount ≤ 1000000
+
+## 5. Merge Sort
+
+### Task 9: Hospital Medical Report Sorting
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+A hospital maintains patient medical report records based on their report IDs. The records are received from multiple departments and must be combined into one sorted list.
+
+Problem Statement:
+
+You are given two arrays containing sorted medical report IDs from two different hospital departments.
+
+Implement the Merge Sort merging logic to combine both arrays into a single sorted array.
+
+Do not use Python's built-in sorting functions.
+
+Input Format:
+
+* The first line contains an integer `N`, representing the number of reports from Department A.
+* The second line contains `N` sorted report IDs.
+* The third line contains an integer `M`, representing the number of reports from Department B.
+* The fourth line contains `M` sorted report IDs.
+
+Output Format:
+
+\- Print the combined sorted report IDs.
+
+Sample Input:
+
+
+4
+10 30 50 70
+3
+20 40 60
+
+
+Sample Output:
+
+
+10 20 30 40 50 60 70
+
+
+Constraints:
+
+* 1 ≤ N, M ≤ 10000
+* All report IDs are positive integers.
+
+### Task 10: E-commerce Sales Performance Analysis
+
+Difficulty: Intermediate
+
+Real-World Scenario:
+
+An e-commerce company collects daily sales figures from multiple regional branches. The company wants to combine the sales data and identify the top-performing sales values.
+
+Problem Statement:
+
+Given an unsorted array of daily sales amounts, implement Merge Sort to arrange the values in descending order.
+
+After sorting, calculate the sum of the top three sales amounts.
+
+If fewer than three sales records exist, calculate the sum of all available records.
+
+Input Format:
+
+* The first line contains an integer `N`, representing the number of sales records.
+* The second line contains `N` space-separated sales amounts.
+
+Output Format:
+
+* First line: Sales amounts sorted in descending order.
+* Second line: Sum of the top three sales amounts.
+
+Sample Input:
+
+
+6
+1500 3000 800 4500 2500 1000
+
+
+Sample Output:
+
+
+4500 3000 2500 1500 1000 800
+10000
+
+
+Constraints:
+
+* 1 ≤ N ≤ 10000
+* 1 ≤ Sales Amount ≤ 1000000
+
+##Submission Guidelines
+
+1. Implement the assigned sorting algorithm manually.
+2. Do not use `sort()` or `sorted()`.
+3. Read input dynamically using `input()`.
+4. Follow the specified input and output formats.
+5. Handle duplicate values and edge cases wherever applicable.
+6. Submit each solution separately.
