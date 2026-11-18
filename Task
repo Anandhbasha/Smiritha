@@ -483,3 +483,120 @@ Constraints:
 4. Follow the specified input and output formats.
 5. Handle duplicate values and edge cases wherever applicable.
 6. Submit each solution separately.
+
+
+
+<!-- Linked list -->
+### **1. Singly Linked List – Hospital Patient Queue**
+
+**Problem Statement:**
+
+A hospital maintains a patient waiting list using a Singly Linked List. Each patient has a unique Patient ID and Name.
+
+Implement a system that supports the following operations:
+
+1. Add a new patient at the end of the waiting list.
+2. Remove a patient using their Patient ID.
+3. Display the patient waiting list.
+4. Search for a patient using their Patient ID.
+5. Display the total number of patients waiting.
+
+**Example:**
+
+```
+Input:
+ADD 101 Anand
+ADD 102 Kumar
+ADD 103 Priya
+REMOVE 102
+DISPLAY
+
+Output:
+101 Anand
+103 Priya
+Total Patients: 2
+```
+
+**Constraint:** Use a Singly Linked List. Do not use Python List or built-in collection classes.
+
+### **2. Doubly Linked List – Music Player Playlist**
+
+**Problem Statement:**
+
+A music streaming application maintains its playlist using a Doubly Linked List. Each song contains a Song ID and Song Name.
+
+Implement a playlist system that supports:
+
+1. Add a song at the end of the playlist.
+2. Move to the next song.
+3. Move to the previous song.
+4. Delete the currently playing song.
+5. Display all songs in forward order.
+6. Display all songs in reverse order.
+
+**Example:**
+
+```
+Input:
+ADD 1 Shape of You
+ADD 2 Perfect
+ADD 3 Believer
+NEXT
+NEXT
+PREVIOUS
+DISPLAY_FORWARD
+DISPLAY_BACKWARD
+
+Output:
+Current Song: Perfect
+
+Forward Playlist:
+Shape of You
+Perfect
+Believer
+
+Backward Playlist:
+Believer
+Perfect
+Shape of You
+```
+
+**Constraint:** Use a Doubly Linked List with both `next` and `prev` pointers.
+
+### **3. Circular Linked List – Multiplayer Game Turn Management**
+
+**Problem Statement:**
+
+A multiplayer game has players sitting in a circle. Each player gets a turn in sequential order. After the last player finishes their turn, the first player should get another turn automatically.
+
+Implement a player management system using a Circular Linked List.
+
+Your system should support:
+
+1. Add a new player.
+2. Remove a player using their Player ID.
+3. Move to the next player's turn.
+4. Display the current player's turn.
+5. Display all players in the circular order.
+6. Simulate N consecutive turns.
+
+**Example:**
+
+```
+Input:
+ADD 1 Anand
+ADD 2 Bala
+ADD 3 Kumar
+PLAY 5
+
+Output:
+Anand
+Bala
+Kumar
+Anand
+Bala
+
+Current Player: Kumar
+```
+
+**Constraint:** The last node must point back to the first node. Do not use Python List or built-in collection classes.
