@@ -606,3 +606,74 @@ Current Player: Kumar
 
 Parsing – Balanced Parentheses
 
+
+
+Task 1 – Movie Ticket Booking Queue
+Create a queue to manage customers waiting to purchase movie tickets.
+
+Requirements:
+- Add a customer to the queue.
+- Serve the first customer.
+- Display the waiting list.
+- Display the next customer.
+Task 2 – College Admission Queue
+A college maintains a queue of students waiting for document verification.
+
+Implement the following operations using a Queue:
+- Add a student name.
+- Remove the student who completed verification.
+- Display all waiting students.
+- Display the next student.
+Task 3 – Circular Queue
+Implement a Circular Queue with a fixed capacity of 5.
+
+Requirements:
+- Enqueue elements.
+- Dequeue elements.
+- Display elements.
+- Handle overflow and underflow.
+Task 4 – Double-Ended Queue
+Create a Deque to manage delivery orders.
+
+Requirements:
+- Add a regular order at the rear.
+- Add an urgent order at the front.
+- Remove an order from the front.
+- Remove an order from the rear.
+- Display all orders.
+Task 5 – Hospital Priority Queue
+A hospital maintains a patient queue based on emergency priority.
+
+Requirements:
+- Register a patient with a priority.
+- Process the highest-priority patient first.
+- Display pending patients.
+- If two patients have the same priority, maintain their registration order.
+
+
+<!-- Stack -->
+
+Task 1 – Reverse a Customer ID
+
+A customer ID is stored as a sequence of digits. Reverse the ID using a Stack without using Python's built-in reverse functions.
+
+Task 2 – Balanced Brackets
+
+Given a string containing (), {}, and [], determine whether all brackets are balanced and correctly nested.
+Intermediate
+Task 3 – Browser History
+
+Implement a browser history system using a Stack.
+
+Requirements:
+- Visit a new URL.
+- Go back to the previous URL.
+- Display the current URL.
+- Display the visited URLs.
+Task 4 – Decimal to Binary
+
+Convert a decimal number to binary using a Stack. Do not use bin().
+
+Task 5 – Postfix Calculator
+
+Implement a calculator that evaluates postfix expressions containing multi-digit numbers and the operators +, -, *, and /.
