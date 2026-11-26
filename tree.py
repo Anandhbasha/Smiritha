@@ -30,28 +30,92 @@ class Node:
         self.left = None
         self.right = None
 
-def inoreder(root):
-    if root is None:
-        return
-    inoreder(root.left)
-    print(root.data,end=" ")
-    inoreder(root.right)
+# def inoreder(root):
+#     if root is None:
+#         return
+#     inoreder(root.left)
+#     print(root.data,end=" ")
+#     inoreder(root.right)
 
-def preorder(root):
-    if root is None:
-        return
-    print(root.data,end=" ")
-    preorder(root.left)
-    preorder(root.right)
+# def preorder(root):
+#     if root is None:
+#         return
+#     print(root.data,end=" ")
+#     preorder(root.left)
+#     preorder(root.right)
 
 
-def postorder(root):
-    if root is None:
-        return
-    postorder(root.left)
-    postorder(root.right)
-    print(root.data,end=" ")
+# def postorder(root):
+#     if root is None:
+#         return
+#     postorder(root.left)
+#     postorder(root.right)
+#     print(root.data,end=" ")
     
+
+# root = Node(10)
+# root.left = Node(20)
+# root.right = Node(30)
+
+# root.left.left = Node(50)
+# root.left.right =Node(60)
+
+
+# root.right.left = Node(80)
+# root.right.right =Node(90)
+
+# print("InOrder Travesel")
+# inoreder(root)
+
+# print("\nPreOrder Travesel")
+# preorder(root)
+
+# print("\nPostOrder Travesel")
+# postorder(root)
+
+# Inorder
+# Left root right
+# preOreder
+# Root Left Right
+# post
+# Left Right Root
+
+
+# Insertion
+#             10
+#       20          30
+#   40      50  60      70
+
+
+from collections import deque
+
+def insertNew(root,data):
+    newNode = Node(data)
+
+    if root is None:
+        return newNode
+    queue = deque([root])
+    # remove
+    # [root]
+    print(queue)
+
+
+
+#       10
+#    20     30
+    while queue:
+        curr = queue.popleft()
+        if curr.left is None:
+            curr.left = newNode
+            return root
+        else:
+            queue.append(curr.left)
+        if curr.right is None:
+            curr.right = newNode
+            return root
+        else:
+            queue.append(curr.right)
+    return root
 
 root = Node(10)
 root.left = Node(20)
@@ -62,20 +126,9 @@ root.left.right =Node(60)
 
 
 root.right.left = Node(80)
-root.right.right =Node(90)
+root = insertNew(root,90)
 
-print("InOrder Travesel")
-inoreder(root)
-
-print("\nPreOrder Travesel")
-preorder(root)
-
-print("\nPostOrder Travesel")
-postorder(root)
-
-# Inorder
-# Left root right
-# preOreder
-# Root Left Right
-# post
-# Left Right Root
+print(root)
+# Search
+# Deletion
+# counts

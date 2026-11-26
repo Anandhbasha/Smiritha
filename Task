@@ -677,3 +677,42 @@ Convert a decimal number to binary using a Stack. Do not use bin().
 Task 5 – Postfix Calculator
 
 Implement a calculator that evaluates postfix expressions containing multi-digit numbers and the operators +, -, *, and /.
+
+
+
+Nov 26
+
+Task 1 – Employee Hierarchy
+Create a Binary Tree representing an employee hierarchy.
+
+Implement:
+- Insert employee IDs.
+- Display employee IDs using Inorder Traversal.
+- Display employee IDs using Preorder Traversal.
+- Display employee IDs using Postorder Traversal.
+Task 2 – Product Category Tree
+Create a Binary Tree representing product categories.
+
+Implement:
+- Insert a category.
+- Search for a category.
+- Count the total categories.
+- Display categories using Preorder Traversal.
+Task 3 – Student Marks Tree
+Create a Binary Tree representing student marks.
+
+Implement:
+- Insert student marks.
+- Search for a specific mark.
+- Count the total number of nodes.
+- Delete a specified mark.
+- Display the tree using Inorder Traversal after deletion.
+Task 4 – Hospital Department Tree
+A hospital maintains a Binary Tree representing its department structure.
+
+Implement:
+- Insert a department.
+- Search for a department.
+- Delete a department.
+- Count the total departments.
+- Display the hierarchy using all three DFS traversals.
