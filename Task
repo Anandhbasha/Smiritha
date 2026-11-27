@@ -716,3 +716,39 @@ Implement:
 - Delete a department.
 - Count the total departments.
 - Display the hierarchy using all three DFS traversals.
+
+
+Nov 27
+Insert 10, 20, 30 into a BST and AVL Tree. Compare the structures.
+
+
+
+Insert 50, 30, 70, 20, 40, 60, 80 into a BST. Perform inorder traversal.
+
+
+
+Search for 60 in the BST.
+
+
+
+Delete 30 from a BST containing 50, 30, 70, 20, 40.
+
+
+
+Insert 30, 20, 10 into an AVL Tree and identify the rotation.
+
+
+
+Insert 10, 20, 30 into an AVL Tree and identify the rotation.
+
+
+
+Insert 30, 10, 20 into an AVL Tree and identify the rotation.
+
+
+
+Insert 10, 30, 20 into an AVL Tree and identify the rotation.
+
+
+
+Calculate the balance factor of every node in a given tree.
